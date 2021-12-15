@@ -3,12 +3,24 @@
 section{
     position: relative;
 }
+.laliga-h1{
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
 
 .bg-room{
     background: url('../../assets/img/laliga-room/bg.png') no-repeat;
+    background-color: #0d111c;
     max-width: 100%;
     background-size: cover;
-    padding-bottom: 30.23%;
+    padding-bottom: 31.88%;
     background-position: center;
 }
 .laliga-room > .container{
@@ -27,15 +39,35 @@ section{
     right: 0;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
     padding: 0 15px;
-    min-width: 33.33%;  
+    max-width: 47%;  
+}
+@media (max-width: 1366px) {
+    .bg-room{
+        background-position: -220px 0px;
+        padding-bottom: 40%;
+    }
+    .laliga-room .area-txt{
+        max-width: 51%;
+    }
 }
 
 @media (max-width: 767px) {
     .bg-room{
-        background: url('../../assets/img/laliga-room/bg-mobile.png') no-repeat;
-        padding-bottom: 38%;
-    }    
+        background-image: url('../../assets/img/laliga-room/bg-mobile.png');
+        padding-bottom: 50%;
+        background-position: 0px 0px;
+    }
+    .laliga-room > .container.position-absolute{
+        overflow: hidden;
+    }
+    .laliga-room .area-txt{
+        max-width: 50%;
+    }
+    .laliga-room h1{
+        font-size: 14px;
+        margin-top:5px;
+        margin-bottom: 10px;
+    }
 }

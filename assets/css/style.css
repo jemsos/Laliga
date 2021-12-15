@@ -16,6 +16,9 @@ html,body{
 body {
     background-color: #fff;
 }
+figure{
+    margin: 0;
+}
 h3 {
     font-size: 22px;
     line-height: 22px;
@@ -82,6 +85,17 @@ button, img, span {
 /*Color*/
 .text-white{
     color: #fff;
+}
+
+/*text align*/
+.txt-center{
+    text-align: center;
+}
+.txt-right{
+    text-align: right;
+}
+.txt-left{
+    text-align: left;
 }
 
 /*Buttons*/
