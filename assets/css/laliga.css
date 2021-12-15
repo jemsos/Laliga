@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+section{
+    position: relative;
+}
+
+.bg-room{
+    background: url('../../assets/img/laliga-room/bg.png') no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    padding-bottom: 30.23%;
+    background-position: center;
+}
+.laliga-room > .container{
+    max-width: 1400px;
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    line-height: 1.4;
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+body {
+    background-color: #fff;
+}
+h3 {
+    font-size: 22px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+a[role="button"] {
+	cursor: pointer;
+}
+a.link {
+	color: #FFF;
+	text-decoration: underline;
+	cursor: pointer;
+}
+a.link:hover {
+	color: #ffcd00;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+img, span, button{
+    vertical-align: middle;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+canvas {
+	vertical-align: middle;
+}
+#main {
+	position: relative;
+}
+button, img, span {
+    vertical-align: middle;
+}
+
+.container{
+	max-width: 1366px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 13px;
+	box-sizing: border-box;
+}
+/*Bg Color*/
+.bg-white{
+    background-color: #fff;
+}
+.bg-Porcelain{
+    background-color: #f3f4f5;
+}
+.bg-tiber{
+    background-color: #092635;
+}
+
+/*Buttons*/
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    cursor: pointer;
+}
+.btn-rounded{
+    border-radius: 50px !important;
+}
+.btn{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: .875rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:hover{
+    background-color: #90949c;
+    border-color: transparent;
+}
+.btn-primary{
+    background-color: #c6a062;
+    font-weight: 700;
+}
+.btn-primary:hover{
+    background-color: #d4b889;
+}
+
+.btn-secondary{
+    background-color: #fff;
+    border-color: #151924;
+}
+.btn-secondary:hover{
+    background-color: rgba(9, 38, 53, 0.1);
+    border-color: #151924;
+}
+
+@media (max-width: 767px) {
+    .btn{
+        font-size: 0.875em;
+        padding: 0.688em 1.250em;
+    }
+}
