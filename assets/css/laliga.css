@@ -14,3 +14,28 @@ section{
 .laliga-room > .container{
     max-width: 1400px;
 }
+.laliga-room > .container.position-absolute{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+.laliga-room .area-txt{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 15px;
+    min-width: 33.33%;  
+}
+
+@media (max-width: 767px) {
+    .bg-room{
+        background: url('../../assets/img/laliga-room/bg-mobile.png') no-repeat;
+        padding-bottom: 38%;
+    }    
+}

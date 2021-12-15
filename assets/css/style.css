@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+*{
+    box-sizing: border-box;
+}
+
 html,body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -75,6 +79,10 @@ button, img, span {
 .bg-tiber{
     background-color: #092635;
 }
+/*Color*/
+.text-white{
+    color: #fff;
+}
 
 /*Buttons*/
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
@@ -117,6 +125,25 @@ button, img, span {
 .btn-secondary:hover{
     background-color: rgba(9, 38, 53, 0.1);
     border-color: #151924;
+}
+
+/*Positions*/
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+
+/*Display*/
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
 }
 
 @media (max-width: 767px) {
