@@ -3,6 +3,15 @@
 section{
     position: relative;
 }
+/*Laliga room start*/
+.bg-room{
+    background: url('../../assets/img/laliga-room/bg.png') no-repeat;
+    background-color: #0d111c;
+    max-width: 100%;
+    background-size: cover;
+    padding-bottom: 31.88%;
+    background-position: center;
+}
 .laliga-h1{
     font-size: 32px;
     margin-bottom: 30px;
@@ -13,15 +22,6 @@ section{
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
-}
-
-.bg-room{
-    background: url('../../assets/img/laliga-room/bg.png') no-repeat;
-    background-color: #0d111c;
-    max-width: 100%;
-    background-size: cover;
-    padding-bottom: 31.88%;
-    background-position: center;
 }
 .laliga-room > .container{
     max-width: 1400px;
@@ -43,6 +43,36 @@ section{
     padding: 0 15px;
     max-width: 47%;  
 }
+/*Laliga room end*/
+
+/*Laliga pattern start*/
+.laliga-pattern{
+    vertical-align: middle;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 20%;
+}
+.laliga-pattern:before{
+    content: '';
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.laliga-pattern div[class*="col"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.laliga-pattern .figure-game{
+    box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    max-height: 132px;
+}
+.card.figure-game > .card-body {
+    padding: 16px;
+}
+/*Laliga pattern end*/
 @media (max-width: 1366px) {
     .bg-room{
         background-position: -220px 0px;
