@@ -50,15 +50,18 @@ section{
     vertical-align: middle;
     height: 100%;
     overflow: hidden;
-    padding-bottom: 20%;
+    padding-top: 3rem;
 }
 .laliga-pattern:before{
     content: '';
-    background-color: red;
+    background-image: url('../../assets/img/laliga-pattern/laliga-pattern.png');
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
+    background-position: 80% 50%;
+}
 }
 .laliga-pattern div[class*="col"] {
     padding-left: 10px;
@@ -67,10 +70,175 @@ section{
 .laliga-pattern .figure-game{
     box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    max-height: 132px;
+    /* max-height: 132px; */
+}
+.txt-sports{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #092635;
+}
+.lapattern-content p{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #092635;
+}
+.laliga-luis{
+    position: relative;
+    z-index: 1;
 }
 .card.figure-game > .card-body {
     padding: 16px;
+}
+.laliga-card-holder{
+    position: absolute;
+    width: 100%;
+    bottom: 39%;
+    z-index: 1;
+}
+.laliga-slider{
+    width: 100%;
+}
+.laliga-slider .slick-track{
+    width: 100%;
+}
+.laliga-slider .slick-slide{
+    padding: 0 15px;
+}
+.laliga-slider .slick-arrow{
+    width: 48px;
+    height: 48px;
+    margin: 0 16px 0 0;
+    padding: 18px;
+    border-radius: 32px;
+    background-color: #b5bec2;
+    position: absolute;
+    bottom: -190px;
+    right: 0;
+    cursor: pointer;
+}
+.laliga-slider .slick-arrow:hover,
+.laliga-slider .slick-arrow:focus{
+    background-color: #90949c;
+}
+.arrow.next.slick-arrow {
+    right: 66px;
+}
+.slick-arrow .arrow-top, .slick-arrow .arrow-bottom{
+    position: relative;
+}
+.slick-arrow .arrow-top:before,
+.slick-arrow .arrow-bottom:before {
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 12px;
+}
+.slick-arrow .arrow-top:before{
+    background-image: url('../../assets/img/laliga-pattern/west.png');
+}
+.slick-arrow .arrow-bottom:before{
+    background-image: url('../../assets/img/laliga-pattern/east.png');
+}
+.laliga-slider .slick-dots{
+    list-style: none;
+    display: flex !important;
+    position: absolute;
+    right: 0;
+    bottom: -225px;
+}
+.laliga-slider .slick-dots li{
+    margin: 0 0.25rem;
+}
+.laliga-slider .slick-dots button {
+    display: block;
+    width: 72px;
+    height: 2px;
+    padding: 0;
+    border: none;
+    border-radius: 29px;
+    background-color: #b5bec2;
+    text-indent: -9999px;
+}
+.laliga-slider .slick-dots li.slick-active button{
+    background-color: #caab72;
+}
+.laliga-crest-heading img{
+    display: inline-block !important;
+    width: 52.6px;
+    height: 20px;
+    margin: 0 3px 0 0;
+}
+.laliga-crest-heading .laliga-date{
+    width: 54px;
+    height: 14px;
+    flex-grow: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222939;
+}
+.laliga-crest-content{
+    display: flex;
+    align-items: center;
+}
+.laliga-matches{
+    width: 75%;
+}
+.laliga-matches p{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222939;
+}
+/* .laliga-crest-heading p{
+    flex-grow: 0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222939;
+} */
+.laliga-crest{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0;
+}
+.laliga-crest img:first-child{
+    position: absolute;
+    right: 22px;
+    bottom: 12px;
+    z-index: 1;
+}
+.laliga-crest img:last-child {
+    position: relative;
+    bottom: -10px;
+    right: -7px;
 }
 /*Laliga pattern end*/
 @media (max-width: 1366px) {
