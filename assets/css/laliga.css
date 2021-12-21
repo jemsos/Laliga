@@ -62,10 +62,19 @@ section{
     top: 0;
     background-position: 80% 50%;
 }
-}
 .laliga-pattern div[class*="col"] {
     padding-left: 10px;
     padding-right: 10px;
+}
+.msports-logo{
+    background-image: url('../../assets/img/logo/MSPORTS_desk.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.msports-logo.bg{
+    height: 68px;
+    margin-bottom: 44px;
 }
 .laliga-pattern .figure-game{
     box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.1);
@@ -91,6 +100,10 @@ section{
     color: #092635;
 }
 .laliga-luis{
+    background-image: url('../../assets/img/laliga-pattern/luis-suarez-desk.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 643px;
     position: relative;
     z-index: 1;
 }
@@ -100,11 +113,12 @@ section{
 .laliga-card-holder{
     position: absolute;
     width: 100%;
-    bottom: 39%;
+    bottom: 25%;
     z-index: 1;
 }
 .laliga-slider{
     width: 100%;
+    margin-bottom: 47px;
 }
 .laliga-slider .slick-track{
     width: 100%;
@@ -209,18 +223,6 @@ section{
     text-align: left;
     color: #222939;
 }
-/* .laliga-crest-heading p{
-    flex-grow: 0;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    text-align: left;
-    color: #222939;
-} */
 .laliga-crest{
     width: 25%;
     height: 100%;
@@ -249,6 +251,45 @@ section{
     .laliga-room .area-txt{
         max-width: 51%;
     }
+    .laliga-pattern:before{
+        background-position: 100% 50%;
+    }
+    .msports-logo.bg{
+        margin-bottom: 38px;
+    }
+}
+@media (max-width: 1023px) {
+    .laliga-pattern:before{
+        background-image:  url('../../assets/img/laliga-pattern/laliga-pattern-tablet.png');
+    }
+    .msports-logo{
+        background-image: url('../../assets/img/logo/MSPORTS_tablet.png');        
+        height: 32px !important;
+        margin-bottom: 22px !important;
+    }
+    .lapattern-content{
+        margin-bottom: 25px;
+    }
+    .lapattern-content p{
+        font-size: 16px;
+    }
+    .laliga-luis{
+        background-image: url('../../assets/img/laliga-pattern/luis-suarez-tablet.png');
+        height: 100vh;
+        position: absolute;
+        bottom: -23px;
+        width: 100%;
+        background-position: 25% 100%;
+    }
+    .laliga-card-holder{
+        position: relative;
+    }
+    .laliga-slider{
+        margin-bottom: 20px;
+    }
+    .btn-wrap{
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -267,5 +308,17 @@ section{
         font-size: 14px;
         margin-top:5px;
         margin-bottom: 10px;
+    }
+    .laliga-pattern:before{
+        background-image:  url('../../assets/img/laliga-pattern/laliga-pattern-mobile.png');
+        background-position: 100% 50%;
+    }
+    .msports-logo{
+        background-image: url('../../assets/img/logo/MSPORTS_mobile.png');
+    }
+    .laliga-luis{
+        background-image: url('../../assets/img/laliga-pattern/luis-suarez-mobile.png');
+        width: 157px;
+        right: 0;
     }
 }
