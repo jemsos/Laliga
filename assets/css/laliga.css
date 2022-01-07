@@ -325,7 +325,7 @@ i.daily-rebates {
 .laliga-game > .thumb {
     width: 425px;
     height: 256px;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 32px;
 }
