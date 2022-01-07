@@ -136,6 +136,7 @@ div[class*="col"]{
     padding: .875rem 1.5rem;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     vertical-align: middle;
     user-select: none;
     -webkit-user-select: none;
@@ -149,6 +150,7 @@ div[class*="col"]{
 .btn-primary{
     background-color: #c6a062;
     font-weight: 700;
+    
 }
 .btn-primary:hover{
     background-color: #d4b889;
@@ -217,11 +219,23 @@ div[class*="col"]{
 
 /*Grid*/
 @media (min-width: 576px){
+    .col-sm-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333333333333%;
+        flex: 0 0 58.33333333333333%;
+        max-width: 58.33333333333333%;
+    }
     .col-sm-6 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .col-sm-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66666666666667%;
+        flex: 0 0 41.66666666666667%;
+        max-width: 41.66666666666667%;
     }
     .col-sm-4 {
         -webkit-box-flex: 0;
@@ -237,12 +251,24 @@ div[class*="col"]{
     }
 }
 @media (min-width: 768px){
+    .col-md-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333333333333%;
+        flex: 0 0 58.33333333333333%;
+        max-width: 58.33333333333333%;
+    } 
     .col-md-6 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
-    }    
+    }  
+    .col-md-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66666666666667%;
+        flex: 0 0 41.66666666666667%;
+        max-width: 41.66666666666667%;
+    }  
     .col-md-4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
@@ -257,12 +283,24 @@ div[class*="col"]{
     }
 }
 @media (min-width: 992px){
+    .col-lg-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333333333333%;
+        flex: 0 0 58.33333333333333%;
+        max-width: 58.33333333333333%;
+    }
     .col-lg-6 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
     }     
+    .col-lg-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66666666666667%;
+        flex: 0 0 41.66666666666667%;
+        max-width: 41.66666666666667%;
+    }
     .col-lg-4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;

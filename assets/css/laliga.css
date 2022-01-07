@@ -3,6 +3,10 @@
 section{
     position: relative;
 }
+.laliga-pattern .btn-primary,
+.laliga-room-sub .btn-primary {
+    padding: .875rem 4rem;
+}
 /*Laliga room start*/
 .bg-room{
     background: url('../../assets/img/laliga-room/bg.png') no-repeat;
@@ -97,6 +101,7 @@ section{
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
+    text-transform: uppercase;
     color: #092635;
 }
 .laliga-luis{
@@ -243,6 +248,92 @@ section{
     right: -7px;
 }
 /*Laliga pattern end*/
+
+/* Laliga Room Sub */
+.laliga-room-sub {
+    padding-top: 60px;
+}
+.laliga-room-sub-logo {
+    background-image: url('../../assets/img/logo/laliga-room-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 35px;
+}
+.laliga-room-sub-logo.bg{
+    height: 96px;
+    margin-bottom: 24px;
+}
+.laliga-girl{
+    background-image: url('../../assets/img/laliga-room-sub/laliga-room-girl.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 535px;
+    position: relative;
+    z-index: 1;
+}
+.laliga-room-sub-features {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.laliga-room-sub-features > .icon {
+    align-items: center;
+}
+.laliga-room-sub-features > .icon > i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 10px;
+}
+.laliga-room-sub-features > .icon > span {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #092635;
+}
+i.best-odds {
+    background: url("../../assets/img/laliga-room-sub/icon-odds.svg") no-repeat;
+}
+i.live-events {
+    background: url("../../assets/img/laliga-room-sub/icon-live-events.svg") no-repeat;
+}
+i.wide-selection {
+    background: url("../../assets/img/laliga-room-sub/icon-soccer.svg") no-repeat;
+}
+i.instant-payouts {
+    background: url("../../assets/img/laliga-room-sub/icon-payout.svg") no-repeat;
+}
+i.daily-rebates {
+    background: url("../../assets/img/laliga-room-sub/icon-promotion.svg") no-repeat;
+}
+.laliga-room-games {
+    position: relative;
+    top: -40px;
+}
+.laliga-games {
+    display: flex;
+    justify-content: space-between;
+}
+.laliga-game {
+    width: 425px;
+}
+.laliga-game > .thumb {
+    width: 425px;
+    height: 256px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+.laliga-game > p {
+    font-size: 20px;
+}
+/* ~Laliga Room Sub End */
+
 @media (max-width: 1366px) {
     .bg-room{
         background-position: -220px 0px;
