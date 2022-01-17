@@ -8,12 +8,12 @@
 
     <!-- style start -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/laliga.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/laliga.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
     <!-- style end -->
     
     <!-- script start -->
@@ -209,6 +209,7 @@
                                 <span>Daily Rebates</span>
                             </div>
                         </div>  
+
                         <div class="btn-wrap txt-center">
                             <button class="btn btn-primary btn-rounded">Join Now!</button>
                         </div>                  
@@ -216,33 +217,43 @@
                 </div>
 
                 <div class="laliga-room-games">
-                    
-                    <div class="laliga-games">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-laliga-room">
+                        <!-- Additional required wrapper -->     
+                        <div class="swiper-wrapper laliga-room-slider laliga-games">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="laliga-game laliga-game-virtuals">
+                                    <div class="thumb">
+                                        <img class="desk" src="assets/img/laliga-room-sub/thumb-virtuals-en.jpg" alt="">
+                                        <img class="mobi" src="assets/img/laliga-room-sub/thumb-virtuals-mobile-en.jpg" alt="">
+                                    </div>
+                                    <p>Follow your favorite teams, players, and sports on LaLiga Virtuals. We provide the most up-to-date data, odds, and stats for all your betting needs.</p>
+                                </div>
+                            </div>
 
-                        <div class="laliga-game laliga-game-virtuals">
-                            <div class="thumb">
-                                <img class="desk" src="assets/img/laliga-room-sub/thumb-virtuals-en.jpg" alt="">
-                                <img class="mobi" src="assets/img/laliga-room-sub/thumb-virtuals-mobile-en.jpg" alt="">
+                            <div class="swiper-slide">
+                                <div class="laliga-game laliga-game-keno">
+                                    <div class="thumb">
+                                        <img class="desk" src="assets/img/laliga-room-sub/thumb-keno-en.jpg" alt="">
+                                        <img class="mobi" src="assets/img/laliga-room-sub/thumb-keno-mobile-en.jpg" alt="">
+                                    </div>
+                                    <p>Play a different kind of Keno with LaLiga Keno. Choose your favorite numbers or bet on any possible combination. It is all up to you!</p>
+                                </div>
                             </div>
-                            <p>Follow your favorite teams, players, and sports on LaLiga Virtuals. We provide the most up-to-date data, odds, and stats for all your betting needs.</p>
-                        </div>
-                        <div class="laliga-game laliga-game-keno">
-                            <div class="thumb">
-                                <img class="desk" src="assets/img/laliga-room-sub/thumb-keno-en.jpg" alt="">
-                                <img class="mobi" src="assets/img/laliga-room-sub/thumb-keno-mobile-en.jpg" alt="">
-                            </div>
-                            <p>Play a different kind of Keno with LaLiga Keno. Choose your favorite numbers or bet on any possible combination. It is all up to you!</p>
-                        </div>
-                        <div class="laliga-game laliga-game-slots">
-                            <div class="thumb">
-                                <img class="desk" src="assets/img/laliga-room-sub/thumb-slots-en.jpg" alt="">
-                                <img class="mobi" src="assets/img/laliga-room-sub/thumb-slots-mobile-en.jpg" alt="">
-                            </div>
-                            <p>It is Slots with La Liga flavor. Play your favorite games with special La Liga themes. Place your bets now!</p>
-                        </div>
 
+                            <div class="swiper-slide">
+                                <div class="laliga-game laliga-game-slots">
+                                    <div class="thumb">
+                                        <img class="desk" src="assets/img/laliga-room-sub/thumb-slots-en.jpg" alt="">
+                                        <img class="mobi" src="assets/img/laliga-room-sub/thumb-slots-mobile-en.jpg" alt="">
+                                    </div>
+                                    <p>It is Slots with La Liga flavor. Play your favorite games with special La Liga themes. Place your bets now!</p>
+                                </div>
+                            </div>
+
+                        </div>                      
                     </div>
-
                 </div>
             </div>
         </section>
