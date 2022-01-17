@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+.desk {
+    display: block;
+}
+.mobi {
+    display: none;
+}
+
 section{
     position: relative;
 }
@@ -360,6 +367,7 @@ i.daily-rebates {
     
 }
 @media (max-width: 1365px) {
+    /* laliga-room-sub */
     .laliga-room-sub .col-left {
         width: calc(38% - 30px);
     }
@@ -382,6 +390,7 @@ i.daily-rebates {
         width: 100%;
         height: 188px;
     }
+    /* ~laliga-room-sub */
 }
 @media (max-width: 1023px) {
     .laliga-pattern:before{
@@ -415,6 +424,65 @@ i.daily-rebates {
     .btn-wrap{
         margin-bottom: 25px;
     }
+    /* laliga-room-sub */
+    .laliga-room-sub {
+        padding-top: 36px;
+    }
+    .laliga-room-sub .col-left {
+        width: calc(36% - 30px);
+    }
+    .laliga-room-sub .col-right {
+        width: calc(71% - 30px);
+    }
+    .laliga-room-sub-logo.bg {
+        height: 48px;
+        margin-bottom: 16px;
+    }
+    .laliga-room-sub-features > .icon > span {
+        font-size: 10px;
+    }
+    .laliga-girl {
+        width: 320px;
+        height: 320px;
+        left: -66px;
+    }
+    .lapattern-content {
+        width: 70%;
+        margin: 0 auto 25px;
+    }
+    .laliga-room-sub-features {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .laliga-room-games {
+        top: -24px;
+    }
+    .laliga-game {
+        max-width: 240px;
+    }
+    .laliga-game > .thumb {
+        margin-bottom: 16px;
+    }
+    .laliga-game > .thumb > .desk {
+        display: none;
+    }
+    .laliga-game > .thumb > .mobi {
+        display: block;
+    }
+    .laliga-game > .thumb {
+        height: 196px;
+    }
+    .laliga-game > p {
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 11px;
+        padding: .5rem 3rem;
+    }
+    .laliga-pattern .btn-primary, .laliga-room-sub .btn-primary {
+        padding: .5rem 3rem;   
+    }
+    /* ~laliga-room-sub */
 }
 
 @media (max-width: 767px) {
