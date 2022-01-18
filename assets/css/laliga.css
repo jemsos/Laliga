@@ -594,6 +594,8 @@ i.daily-rebates {
     /* Laliga Derbis */
     .derbi-baccarat {
         padding: 48px 0;
+        background-position: 140% center;
+        background-size: 48%;
     }
     /* ~Laliga Derbis */
 }
@@ -708,6 +710,12 @@ i.daily-rebates {
 }
 
 @media (max-width: 767px) {
+    .container {
+        padding: 0;
+    }
+    .row {
+        padding: 0 13px;
+    }
     .swiper {
         /* overflow: visible; */
     }
@@ -849,3 +857,9 @@ i.daily-rebates {
     }
     /* ~Laliga Derbis */
 }
+ @media (max-width: 479px){
+    .derbi-baccarat {
+        background-position: -227% center;
+        background-size: 116%;
+    }
+ }
