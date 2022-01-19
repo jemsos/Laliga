@@ -816,6 +816,9 @@ i.daily-rebates {
     /* ~Laliga Derbis */
 
     /* Laliga More Sports */
+    .swiper-more {
+        overflow: hidden;
+    }
     .laliga-more-sports {
         background-size: 736px auto;
         background-position: center calc(100% - 24px);
