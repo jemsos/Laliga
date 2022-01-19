@@ -502,7 +502,7 @@ i.daily-rebates {
 .laliga-more-sports {
     padding: 100px 0 200px;
     background-image: url("../img/laliga-more/horizontal-pattern.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat no-repeat;
     background-position: center calc(100% - 40px);
     margin-bottom: 40px;
 }
