@@ -526,16 +526,28 @@ i.daily-rebates {
     align-items: baseline;
     justify-content: space-between;
 }
+.swiper-more {
+    overflow: visible;
+}
 .laliga-sport {   
     display: block;
     position: relative;
     width: 648px;
     height: 378px;
     margin: 0 auto 40px;
+    transition: all 0.15s ease-in-out;
 }
 .laliga-sport-mini {
     width: 427px;
     height: 249px;
+}
+.laliga-sport:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, .3); */
 }
 .laliga-sport > img {
     width: 100%;
@@ -554,7 +566,8 @@ i.daily-rebates {
     padding: .5rem 1.2rem;
 }
 .laliga-sport:hover button {
-    background-color: rgba(9, 38, 53, 0.1);;
+    background-color: rgba(255,255,255, .1);
+    border-color: #fff;
 }
 /* ~Laliga More Products */
 
