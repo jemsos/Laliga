@@ -13,7 +13,8 @@ section{
     position: relative;
 }
 .laliga-pattern .btn-primary,
-.laliga-room-sub .btn-primary {
+.laliga-room-sub .btn-primary,
+.derbi-baccarat .btn-primary {
     padding: .875rem 4rem;
 }
 /*Laliga room start*/
@@ -102,7 +103,7 @@ section{
     color: #092635;
 }
 .lapattern-content p{
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 600;
     font-stretch: normal;
@@ -367,12 +368,12 @@ i.daily-rebates {
 /* ~Laliga Room Sub End */
 
 /* Laliga Derbis */
-/* DERBI BACCARAT */
 .derbi-baccarat {
     background-color: #092635;
     background-image: url(../img/laliga-derbis/sec4-bg-logo.svg);
     background-repeat: no-repeat;
     background-position: right;
+    padding: 85px 0;
 }
 
 .derbi-baccarat .inner {
@@ -383,10 +384,6 @@ i.daily-rebates {
 .derbi-baccarat-header .derbi-baccarat-logo {
     width: fit-content;
     margin: 0 auto;
-}
-
-.derbi-baccarat-logo img {
-    margin-top: 86px;
 }
 
 .derbi-baccarat-header {
@@ -402,18 +399,21 @@ i.daily-rebates {
 }
 
 .derbi-cards {
-    display: inline-flex;
-    gap: 48px;
-    margin: 48px 0 48px 0;
+    display: flex;
+    justify-content: center;
+    margin: 48px auto;
 }
-
+.derbi-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .derbi-cards .derbi-card-left {
     background-image: url(../img/laliga-derbis/derbi-baccarat.jpg);
 }
 
 .derbi-teams .vs {
     font-size: 22px;
-    font-family: 'AvantGarde';
+    /* font-family: 'AvantGarde'; */
     color: #fff;
 }
 
@@ -439,8 +439,9 @@ i.daily-rebates {
 .card-text {
     font-size: 24px;
     color: #fff;
-    font-family: 'AvantGarde';
+    /* font-family: 'AvantGarde'; */
     margin-top: 32px;
+    font-weight: 600;
 }
 
 .team-logo {
@@ -448,13 +449,27 @@ i.daily-rebates {
     height: 120px;
     margin: 0 auto;
 }
-
+.team-1-logo > img {
+    -webkit-transform: rotate(-13deg);
+    -moz-transform: rotate(-13deg);
+    -o-transform: rotate(-13deg);
+    -ms-transform: rotate(-13deg);
+    transform: rotate(-13deg);
+}
+.team-2-logo > img {
+    -webkit-transform: rotate(13deg);
+    -moz-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    transform: rotate(13deg);
+}
 .derbi-cards .derbi-card {
     width: 561px;
     height: 272px;
     border-radius: 8px;
     box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.4);
     border: solid 1px #c6a062;
+    margin: 0 24px;
 }
 
 .derbi-button {
@@ -482,6 +497,49 @@ i.daily-rebates {
     vertical-align: middle;
 }
 /* ~Laliga Derbis */
+
+/* Laliga More Products */
+.laliga-more-sports {
+    padding: 100px 0 200px;
+    background-image: url("../img/laliga-more/horizontal-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 40px);
+    margin-bottom: 40px;
+}
+.laliga-more-sports h3 {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+.laliga-more-sports h3:before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: #c6a062;
+    position: absolute;
+    top: 32px;
+    left: 0;
+}
+.laliga-more {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.laliga-sport {   
+    width: 648px;
+    height: 378px;
+    margin: 0 auto 40px;
+}
+.laliga-sport-mini {
+    width: 427px;
+    height: 249px;
+}
+.laliga-sport > img {
+    width: 100%;
+    height: 100%;
+}
+/* ~Laliga More Products */
 
 @media (max-width: 1366px) {
     .bg-room{
@@ -579,6 +637,35 @@ i.daily-rebates {
         height: 188px;
     }
     /* ~laliga-room-sub */
+
+    /* Laliga Derbis */
+    .derbi-baccarat {
+        padding: 48px 0;
+        background-position: 140% center;
+        background-size: 48%;
+    }
+    /* ~Laliga Derbis */
+
+    /* Laliga More Sports */
+    .laliga-more-sports {
+        background-size: 999px auto;
+        padding: 100px 0 170px;
+    }
+    .laliga-more > div:nth-child(1),
+    .laliga-more > div:nth-child(2) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .laliga-sport {   
+        width: 483px;
+        height: 282px;
+    }
+    .laliga-sport-mini {   
+        width: 316px;
+        height: 185px;
+    }
+    /* ~Laliga More Sports */
 }
 @media (max-width: 1024px) {
     /* Laliga Derbis */
@@ -677,13 +764,63 @@ i.daily-rebates {
         font-size: 11px;
         padding: .5rem 3rem;
     }
-    .laliga-pattern .btn-primary, .laliga-room-sub .btn-primary {
+    .laliga-pattern .btn-primary,
+    .laliga-room-sub .btn-primary,
+    .derbi-baccarat .btn-primary {
         padding: .5rem 3rem;   
     }
     /* ~laliga-room-sub */
+    
+    /* Laliga Derbis */
+    .derbi-baccarat {
+        padding: 40px 0;
+    }
+    /* ~Laliga Derbis */
+
+    /* Laliga More Sports */
+    .laliga-more-sports {
+        background-size: 736px auto;
+        background-position: center calc(100% - 24px);
+        padding: 70px 0 90px;
+    }
+    .laliga-more-sports h3 {
+        font-size: 16px;
+        padding: 0 13px;
+        margin-bottom: 40px;
+    }
+    .laliga-more-sports h3:before {
+        left: 13px;
+    }
+    .laliga-more-sports .container {
+        padding: 0;
+    }
+    .laliga-more {
+        flex-wrap: nowrap;
+    }
+    .laliga-more > div:nth-child(1),
+    .laliga-more > div:nth-child(2) {
+        width: auto;
+        display: block;
+    }
+    .laliga-sport,
+    .laliga-sport-mini {   
+        width: 328px;
+        height: 190px;
+        margin-bottom: 32px;
+    }
+    .laliga-more-sports .swiper-slide {
+        justify-content: center;
+    }
+    /* ~Laliga More Sports */
 }
 
 @media (max-width: 767px) {
+    .container {
+        padding: 0;
+    }
+    .row {
+        padding: 0 13px;
+    }
     .swiper {
         /* overflow: visible; */
     }
@@ -753,7 +890,6 @@ i.daily-rebates {
     /* ~laliga-room-sub */
 
     /* Laliga Derbis */
-    /* DERBI BACCARAT */
     .derbi-baccarat .inner {
         padding: 0 8px;
     }
@@ -794,6 +930,7 @@ i.daily-rebates {
     .derbi-cards .derbi-card {
         width: 100%;
         height: 152px;
+        margin: 0 auto;
     }
 
     .derbi-cards .derbi-card:first-child {
@@ -823,4 +960,23 @@ i.daily-rebates {
         padding-top: 9px;
     }
     /* ~Laliga Derbis */
+
+    /* Laliga More Sports */
+    .laliga-more-sports {
+        background-size: 375px auto;
+        padding: 70px 0 60px;
+    }
+    .laliga-sport,
+    .laliga-sport-mini {   
+        width: 328px;
+        height: 190px;
+        margin-bottom: 32px;
+    }
+    /* ~Laliga More Sports */
 }
+ @media (max-width: 479px){
+    .derbi-baccarat {
+        background-position: -227% center;
+        background-size: 116%;
+    }
+ }
