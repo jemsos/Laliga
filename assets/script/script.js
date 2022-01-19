@@ -44,7 +44,10 @@ $(document).ready(function(){
         navigation: false,
         breakpoints: {
             340: {
-                slidesPerView: 2.1
+                slidesPerView: 2.15
+            },
+            400: {
+                slidesPerView: 2.25
             },
             480: {
                 slidesPerView: 2.5
