@@ -136,82 +136,25 @@ section{
 }
 .card.figure-game > .card-body {
     padding: 16px;
+    height: 180px;
 }
 .laliga-card-holder{
     position: absolute;
     width: 100%;
-    bottom: 25%;
+    top: 40%;
     z-index: 1;
 }
-.laliga-slider{
-    width: 100%;
-    margin-bottom: 47px;
-}
-.laliga-slider .slick-track{
-    width: 100%;
-}
-.laliga-slider .slick-slide{
-    padding: 0 15px;
-}
-.laliga-slider .slick-arrow{
-    width: 48px;
-    height: 48px;
-    margin: 0 16px 0 0;
-    padding: 18px;
-    border-radius: 32px;
-    background-color: #b5bec2;
+.laliga-card-holder .btn-wrap {
     position: absolute;
-    bottom: -190px;
-    right: 0;
-    cursor: pointer;
+    width: 100%;
+    top: 36%;
+    z-index: 2;
 }
-.laliga-slider .slick-arrow:hover,
-.laliga-slider .slick-arrow:focus{
-    background-color: #90949c;
+.swiper-pattern {
+    width: 100%;
+    margin-bottom: 48px;
 }
-.arrow.next.slick-arrow {
-    right: 66px;
-}
-.slick-arrow .arrow-top, .slick-arrow .arrow-bottom{
-    position: relative;
-}
-.slick-arrow .arrow-top:before,
-.slick-arrow .arrow-bottom:before {
-    background-repeat: no-repeat;
-    content: '';
-    display: block;
-    width: 15px;
-    height: 12px;
-}
-.slick-arrow .arrow-top:before{
-    background-image: url('../../assets/img/laliga-pattern/west.png');
-}
-.slick-arrow .arrow-bottom:before{
-    background-image: url('../../assets/img/laliga-pattern/east.png');
-}
-.laliga-slider .slick-dots{
-    list-style: none;
-    display: flex !important;
-    position: absolute;
-    right: 0;
-    bottom: -225px;
-}
-.laliga-slider .slick-dots li{
-    margin: 0 0.25rem;
-}
-.laliga-slider .slick-dots button {
-    display: block;
-    width: 72px;
-    height: 2px;
-    padding: 0;
-    border: none;
-    border-radius: 29px;
-    background-color: #b5bec2;
-    text-indent: -9999px;
-}
-.laliga-slider .slick-dots li.slick-active button{
-    background-color: #caab72;
-}
+
 .laliga-crest-heading img{
     display: inline-block !important;
     width: 52.6px;
@@ -268,6 +211,33 @@ section{
     position: relative;
     bottom: -10px;
     right: -7px;
+}
+.laliga-pattern .swiper {
+    overflow-y: visible;
+    height: 600px;
+}
+.laliga-pattern .swiper-button-prev,
+.laliga-pattern .swiper-button-next {
+    width: 48px;
+    height: 48px;
+    background: #b5bec2;
+    border-radius: 50%;
+}
+.laliga-pattern .swiper-button-next:after {
+    content: '';
+    width: 12px;
+    height: 8px;
+    background: url("../img/laliga-pattern/east.svg") no-repeat center center;   
+}
+.laliga-pattern .swiper-button-prev:after {
+    content: '';
+    width: 12px;
+    height: 8px;
+    background: url("../img/laliga-pattern/west.svg") no-repeat center center; 
+}
+.laliga-pattern .swiper-button-prev {
+    left: auto;
+    right: 5%;
 }
 /*Laliga pattern end*/
 
@@ -857,6 +827,9 @@ i.daily-rebates {
     .laliga-more-sports .btn-primary {
         padding: .5rem 3rem;   
     }
+    .laliga-game .btn-overlay > .btn-warn {
+        font-size: 12px;
+    }
     /* ~laliga-room-sub */
     
     /* Laliga Derbis */
@@ -983,6 +956,13 @@ i.daily-rebates {
     }
     .laliga-game > p {
         padding: 0 5px;
+    }
+    .laliga-game .btn-overlay > .btn-warn {
+        font-size: 8px;
+    }
+    .laliga-game .btn-overlay > .btn-warn > img {
+        width: 14px;
+        height: 14px;
     }
     /* ~laliga-room-sub */
 
