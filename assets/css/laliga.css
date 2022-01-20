@@ -8,13 +8,25 @@ body {
 .mobi {
     display: none;
 }
-
+.registered .btn-join {
+    display: none;
+}
+.registered .btn-play {
+    display: inline-block;
+}
+.unregistered .btn-join {
+    display: inline-block;
+}
+.unregistered .btn-play {
+    display: none;
+}
 section{
     position: relative;
 }
 .laliga-pattern .btn-primary,
 .laliga-room-sub .btn-primary,
-.derbi-baccarat .btn-primary {
+.derbi-baccarat .btn-primary,
+.laliga-more-sports .btn-primary {
     padding: .875rem 4rem;
 }
 /*Laliga room start*/
@@ -331,9 +343,6 @@ i.instant-payouts {
 i.daily-rebates {
     background: url("../../assets/img/laliga-room-sub/icon-promotion.svg") no-repeat;
 }
-.swiper-laliga-room {
-
-}
 .laliga-room-games {
     position: relative;
     top: -40px;
@@ -347,15 +356,59 @@ i.daily-rebates {
     width: 100%;
 }
 .laliga-game > .thumb {
+    display: block;
+    position: relative;
     width: 100%;
     height: 256px;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 .laliga-game > .thumb > img {
     width: 100%;
     height: auto;
+}
+.laliga-game > .thumb > .btn-overlay {
+    background-color: rgba(26, 32, 44, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+.laliga-game > .thumb:hover .btn-overlay {
+    opacity: 1;
+}
+.laliga-game.under-maintenance .btn-overlay > .btn,
+.laliga-game.coming-soon .btn-overlay > .btn {
+    display: none;
+}
+.laliga-game .btn-overlay > .btn-warn {
+    display: none;
+}
+.laliga-game .btn-overlay > .btn-warn {
+    color: #c6a062;
+    background-color: #151924;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+}
+.laliga-game.under-maintenance .btn-overlay > .btn-warn.btn-maintenance {
+    display: block;
+}
+.laliga-game.coming-soon .btn-overlay > .btn-warn.btn-coming {
+    display: block;
+}
+.laliga-game.under-maintenance .btn-overlay > .btn-warn > img {
+    margin-right: 5px;
 }
 .laliga-game > p {
     font-size: 20px;
@@ -407,26 +460,16 @@ i.daily-rebates {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.derbi-cards .derbi-card-left {
-    background-image: url(../img/laliga-derbis/derbi-baccarat.jpg);
-}
-
 .derbi-teams .vs {
     font-size: 22px;
     /* font-family: 'AvantGarde'; */
     color: #fff;
 }
-
 .derbi-teams .team-text {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;;
     color: #fff;
 }
-
-.derbi-cards .derbi-card-right {
-    background-image: url(../img/laliga-derbis/derbi-baccarat.jpg);
-}
-
 .derbi-teams {
     display: flex;
     align-items: center;
@@ -464,14 +507,20 @@ i.daily-rebates {
     transform: rotate(13deg);
 }
 .derbi-cards .derbi-card {
+    background-image: url(../img/laliga-derbis/derbi-baccarat.jpg);
     width: 561px;
     height: 272px;
     border-radius: 8px;
     box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.4);
     border: solid 1px #c6a062;
     margin: 0 24px;
+    transition: all .05s ease-in-out;
+    cursor: pointer;
 }
-
+.derbi-cards .derbi-card:hover {
+    background-image: url(../img/laliga-derbis/derbi-baccarat-hover.jpg);
+    transform: scale(1.05);
+}
 .derbi-button {
     width: 232px;
     height: 56px;
@@ -804,7 +853,8 @@ i.daily-rebates {
     }
     .laliga-pattern .btn-primary,
     .laliga-room-sub .btn-primary,
-    .derbi-baccarat .btn-primary {
+    .derbi-baccarat .btn-primary,
+    .laliga-more-sports .btn-primary {
         padding: .5rem 3rem;   
     }
     /* ~laliga-room-sub */
