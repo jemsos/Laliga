@@ -1,5 +1,36 @@
 $(document).ready(function(){
 
+    'use strict';
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var urlParamLang = urlParams.get('lang');
+    var langJson;
+    if(urlParamLang != 'cn' && urlParamLang != 'id' && urlParamLang != 'vn' && urlParamLang != 'th') {
+        urlParamLang = 'en';
+    }
+    fetchLangJson(urlParamLang);
+    function fetchLangJson(country) {
+        // $('.lang-area .sel-lang').prepend('<img src="media/custom/flags/'+country+'.svg">');
+        $('body').attr('data-lang', country);
+        $.ajax({
+            url: "assets/script/langcontent/"+country+".json",
+            type: 'GET',
+            cache: false,
+            dataType: 'json',
+            success: function(result) {
+                Object.entries(result).map(obj => {
+                    const key   = obj[0];
+                    const value = obj[1];
+                    $('[data-txt="'+key+'"]').html(value);
+                    $('[data-cta="'+key+'"]').attr('href', value);
+                });
+            },
+            error: function() {
+                alert("No");
+            }
+        });
+    }
+
     /* Swipe */
     const sliderSwiper = new Swiper('.swiper-pattern',{
         slidesPerView: 1,
@@ -108,14 +139,9 @@ $(document).ready(function(){
         }
     }
     toggleSwiper();
-    // // on load
-    // $(window).load(function() {
-    //     toggleSwiper();
-    // });
-    // on resize
+
     $(window).resize(function() {
         toggleSwiper();
     });
-
-    
 });
+
