@@ -76,7 +76,7 @@ section{
     vertical-align: middle;
     height: 100%;
     overflow: hidden;
-    padding-top: 3rem;
+    padding-top: 80px;
 }
 .laliga-pattern:before{
     content: '';
@@ -87,6 +87,12 @@ section{
     position: absolute;
     top: 0;
     background-position: 80% 50%;
+}
+.laliga-pattern .container {
+    padding: 0;
+}
+.laliga-pattern .row {
+    padding: 0 13px;
 }
 .laliga-pattern div[class*="col"] {
     padding-left: 10px;
@@ -145,14 +151,7 @@ section{
     z-index: 1;
 }
 .laliga-card-holder .btn-wrap {
-    position: absolute;
-    width: 100%;
-    top: 36%;
-    z-index: 2;
-}
-.swiper-pattern {
-    width: 100%;
-    margin-bottom: 48px;
+    position: relative;
 }
 
 .laliga-crest-heading img{
@@ -212,16 +211,26 @@ section{
     bottom: -10px;
     right: -7px;
 }
-.laliga-pattern .swiper {
+.laliga-pattern .swiper-pattern {
     overflow-y: visible;
-    height: 600px;
+    width: 100%;
+    margin-bottom: 48px;
 }
 .laliga-pattern .swiper-button-prev,
 .laliga-pattern .swiper-button-next {
     width: 48px;
     height: 48px;
-    background: #b5bec2;
+    background: #4e5461;
     border-radius: 50%;
+    top: 50%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.laliga-pattern .swiper-button-prev {
+    left: 0;
+}
+.laliga-pattern .swiper-button-next {
+    right: 0;
 }
 .laliga-pattern .swiper-button-next:after {
     content: '';
@@ -235,12 +244,13 @@ section{
     height: 8px;
     background: url("../img/laliga-pattern/west.svg") no-repeat center center; 
 }
-.laliga-pattern .swiper-button-prev {
-    left: auto;
-    right: 6%;
+.laliga-pattern .swiper-pattern:hover .swiper-button-prev,
+.laliga-pattern .swiper-pattern:hover .swiper-button-next {
+    opacity: 1;
 }
-.laliga-pattern .swiper-button-next {
-    right: 1%;
+.laliga-pattern .swiper-pattern:hover .swiper-button-prev.swiper-button-disabled,
+.laliga-pattern .swiper-pattern:hover .swiper-button-next.swiper-button-disabled {
+    opacity: .35;
 }
 /*Laliga pattern end*/
 
@@ -602,7 +612,7 @@ i.daily-rebates {
         max-width: 51%;
     }
     .laliga-pattern:before{
-        background-position: 100% 50%;
+        background-position: 130% 145%;
     }
     .msports-logo.bg{
         margin-bottom: 38px;
@@ -782,8 +792,7 @@ i.daily-rebates {
         top: 35%;
     }
     .laliga-pattern .swiper-pattern {
-        height: 270px;
-        margin-bottom: 0;
+        margin-bottom: 32px;
     }
     .laliga-slider{
         margin-bottom: 20px;
@@ -797,7 +806,6 @@ i.daily-rebates {
     .laliga-pattern .swiper-button-prev, .laliga-pattern .swiper-button-next {
         width: 36px;
         height: 36px;
-        display: none;
     }
     .swiper-button-next, .swiper-button-prev {
         top: 75%;
@@ -864,6 +872,9 @@ i.daily-rebates {
     .derbi-baccarat .btn-primary,
     .laliga-more-sports .btn-primary {
         padding: .5rem 3rem;   
+    }
+    .laliga-room-sub .laliga-game .btn-primary {
+        padding: .5rem 1rem;   
     }
     .laliga-game .btn-overlay > .btn-warn {
         font-size: 12px;
