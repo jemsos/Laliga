@@ -237,7 +237,10 @@ section{
 }
 .laliga-pattern .swiper-button-prev {
     left: auto;
-    right: 5%;
+    right: 6%;
+}
+.laliga-pattern .swiper-button-next {
+    right: 1%;
 }
 /*Laliga pattern end*/
 
